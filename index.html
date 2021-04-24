@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brew</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/maj5krf.css" />
+    <script async type="text/javascript" src="scripts/brew.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn blur-circle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <nav class="hide">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="flavours.html">Bar Flavours</a></li>
+          <li><a href="locate.html">Where to Find Us</a></li>
+          <li><a href="subscription.html">Subscription Program</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="sect intro col snap">
+        <div id="floating-bars">
+          <div class="floating-bar"></div>
+          <div class="floating-bar"></div>
+        </div>
+        <div class="logo"></div>
+        <!--
+        <h1 class="title">Brew.</h1>
+        <h2>Vegan Coffee and Tea Based Bars</h2>
+        -->
+      </div>
+      <div class="sect snap tagline-block">
+        <img class="large-img" src="images/mainbars.jpeg" alt="Brew Bars Unwrapped">
+        <h2 class="tagline">natural.<br>vegan.<br>energizing.<br>organic.<br>conscious.</h2>
+      </div>
+      <div class="flvr-block sect row fs snap">
+        <div class="hz-cap">
+          <h3>Our best sellers</h3>
+          <div class="rarrow"></div>
+        </div>
+        <div class="flvr-scroll row fs hz" id="flavours">
+          <a href="matcha.html" class="flvr-link">
+            <p>Matcha</p>
+          </a>
+          <a href="flavours.html" class="flvr-link">
+            <p>Earl Grey</p>
+          </a>
+          <a href="flavours.html" class="flvr-link">
+            <p>Hibiscus</p>
+          </a>
+          <a href="flavours.html" class="flvr-link">
+            <p>Dragonwell</p>
+          </a>
+          <a href="flavours.html" class="flvr-link">
+            <p>Americano</p>
+          </a>
+          <div class="hz-end">
+            <a href="flavours.html">View all flavours</a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer snap">
+        <div class="socials">
+          <div class="social-block">
+            <div class="social-pic" id="ig-icon"></div>
+            <p>@brew.bar</p>
+          </div>
+          <div class="social-block">
+            <div class="social-pic" id="tw-icon"></div>
+            <p>@brewbar</p>
+          </div>
+        </div>
+        <div class="contact">
+          <p class="phone">800-458-7222</p>
+          <p class="email">brewbar@gmail.com</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    let menuBtn = document.querySelector(".menu-btn");
+    let nav = document.querySelector("nav");
+
+    menuBtn.addEventListener("click", function () {
+      if (nav.classList.contains("hide")) {
+        nav.classList.remove("hide");
+        nav.classList.add("show");
+        menuBtn.classList.remove("blur-circle");
+      } else {
+        nav.classList.add("hide");
+        nav.classList.remove("show");
+        menuBtn.classList.add("blur-circle");
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Where to Find Brew Bars</title>
+
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/maj5krf.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn blur-circle">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <nav class="hide">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Brew</a></li>
+          <li><a href="flavours.html">Bar Flavours</a></li>
+          <li><a href="subscription.html">Subscription Program</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="grid-page">
+      <div class="heading-block">
+        <h1 class="heading">Where to Find Brew Bars</h1>
+      </div>
+      <div class="locate-grid">
+        <div class="locate-card">
+          <div class="locate-img"></div>
+          <h2>Location Name</h2>
+          <p class="location-address">123 Street St. Toronto, ON. M4Y 1T1</p>
+          <p class="location-number">416-900-0000</p>
+          <a href="source.html" class="location-site">www.supplierwebsite.ca</a>
+        </div>
+        <div class="locate-card">
+            <div class="locate-img"></div>
+            <h2>Location Name</h2>
+            <p class="location-address">123 Street St. Toronto, ON. M4Y 1T1</p>
+            <p class="location-number">416-900-0000</p>
+            <a href="source.html" class="location-site">www.supplierwebsite.ca</a>
+          </div>
+          <div class="locate-card">
+            <div class="locate-img"></div>
+            <h2>Location Name</h2>
+            <p class="location-address">123 Street St. Toronto, ON. M4Y 1T1</p>
+            <p class="location-number">416-900-0000</p>
+            <a href="source.html" class="location-site">www.supplierwebsite.ca</a>
+          </div>
+          <div class="locate-card">
+            <div class="locate-img"></div>
+            <h2>Location Name</h2>
+            <p class="location-address">123 Street St. Toronto, ON. M4Y 1T1</p>
+            <p class="location-number">416-900-0000</p>
+            <a href="source.html" class="location-site">www.supplierwebsite.ca</a>
+          </div>
+          <div class="locate-card">
+            <div class="locate-img"></div>
+            <h2>Location Name</h2>
+            <p class="location-address">123 Street St. Toronto, ON. M4Y 1T1</p>
+            <p class="location-number">416-900-0000</p>
+            <a href="source.html" class="location-site">www.supplierwebsite.ca</a>
+          </div>
+          <div class="locate-card">
+            <div class="locate-img"></div>
+            <h2>Location Name</h2>
+            <p class="location-address">123 Street St. Toronto, ON. M4Y 1T1</p>
+            <p class="location-number">416-900-0000</p>
+            <a href="source.html" class="location-site">www.supplierwebsite.ca</a>
+          </div>
+      </div>
+    </div>
+    <footer class="footer snap">
+      <div class="socials">
+        <div class="social-block">
+          <div class="social-pic" id="ig-icon"></div>
+          <p>@brew.bar</p>
+        </div>
+        <div class="social-block">
+          <div class="social-pic" id="tw-icon"></div>
+          <p>@brewbar</p>
+        </div>
+      </div>
+      <div class="contact">
+        <p class="phone">800-458-7222</p>
+        <p class="email">brewbar@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let menuBtn = document.querySelector(".menu-btn");
+    let nav = document.querySelector("nav");
+
+    menuBtn.addEventListener("click", function () {
+      if (nav.classList.contains("hide")) {
+        nav.classList.remove("hide");
+        nav.classList.add("show");
+        menuBtn.classList.remove("blur-circle");
+      } else {
+        nav.classList.add("hide");
+        nav.classList.remove("show");
+        menuBtn.classList.add("blur-circle");
+      }
+    });
+  </script>
+</html>
