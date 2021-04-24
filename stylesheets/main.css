@@ -177,10 +177,6 @@ nav ul li {
   width: 100%;
 }
 
-.flvr-scroll::-webkit-scrollbar {
-  height: 5px;
-}
-
 /* FLAVOUR LINK CARDS */
 .flvr-link {
   display: flex;
